@@ -1,0 +1,26 @@
+<div class="multi-buttons header-buttons">
+<div class="sqs-block-button-container" data-animation-role="button">
+  <a href="***" target="_blank" class="sqs-button-element--primary sqs-block-button-element">
+    ***
+  </a>
+  <a href="***" class="sqs-button-element--secondary sqs-block-button-element">
+    ***
+  </a>
+</div>
+  </div>
+
+<style>
+/* Side by Side Buttons */
+.multi-button-wrapper, .multi-buttons {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.multi-buttons, .sqs-block-button-container {
+  gap: 15px;
+  justify-content: flex-start;
+    flex-wrap: wrap;
+  display: flex;
+}
+</style>
