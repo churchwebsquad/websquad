@@ -1,0 +1,109 @@
+>>> Custom shadow on buttons - styling based on set section color styles
+
+/* --- BUTTON STYLING --- */
+
+/* -- Primary Button (medium size) -- */
+/* Bright BKG (Medium Color BKG) */
+ .bright .sqs-block-button .sqs-block-button-element--medium {
+     box-shadow: 5px 5px white;
+     transition: all ease-in .05s; }
+ .bright .sqs-block-button .sqs-block-button-element--medium:hover {
+     opacity: 1 !important;
+     box-shadow: none;
+     transform: translateY(4px) !important;
+     transition: all ease-in .05s; }
+
+/* Black BKG (Darkest Color BKG) */
+ .black .sqs-block-button .sqs-block-button-element--medium {
+     box-shadow: 5px 5px white;
+     transition: all ease-in .05s; }
+ .black .sqs-block-button .sqs-block-button-element--medium:hover {
+     opacity: 1 !important;
+     box-shadow: none;
+     transform: translateY(4px) !important;
+     transition: all ease-in .05s; }
+
+/* Standard BKG */
+ .sqs-block-button .sqs-block-button-element--medium {
+     box-shadow: 5px 5px var(--medium-color);
+     transition: all ease-in .05s; }
+ .sqs-block-button .sqs-block-button-element--medium:hover {
+     opacity: 1 !important;
+     box-shadow: none;
+     transform: translateY(4px) !important;
+     transition: all ease-in .05s; }
+
+
+/* -- Secondary Button (large size) -- */
+/* Bright BKG (Medium Color BKG) */
+ .bright .sqs-block-button .sqs-block-button-element--large {
+     box-shadow: 5px 5px white; 
+     transition: all ease-in .05s; }
+ .bright .sqs-block-button .sqs-block-button-element--large:hover {
+     opacity: 1 !important;
+     box-shadow: none;
+     transform: translateY(4px) !important;
+     transition: all ease-in .05s; }     
+
+/* Black BKG (Darkest Color BKG) */
+ .black .sqs-block-button .sqs-block-button-element--large {
+     box-shadow: 5px 5px var(--medium-color); 
+     transition: all ease-in .05s; }
+ .black .sqs-block-button .sqs-block-button-element--large:hover {
+     opacity: 1 !important;
+     box-shadow: none;
+     transform: translateY(4px) !important;
+     transition: all ease-in .05s; }   
+
+/* Standard BKG */
+ .sqs-block-button .sqs-block-button-element--large {
+     box-shadow: 5px 5px var(--medium-color); 
+     transition: all ease-in .05s; }
+ .sqs-block-button .sqs-block-button-element--large:hover {
+     opacity: 1 !important;
+     box-shadow: none;
+     transform: translateY(4px) !important;
+     transition: all ease-in .05s; }   
+
+
+/* -- Tertiary Button - Adds Arrow (small size) -- */
+/* Bright BKG (Medium Color BKG) */
+.bright .sqs-block-button-element--small {
+  background-color: var(--darkest-color) !important;
+  color: var(--medium-color) !important; }
+
+.bright .sqs-block-button-element--small:hover {
+  background-color: transparent !important;
+  color: var(--darkest-color) !important; }
+.bright .sqs-block-button-element--small:after {
+     content: '➔';
+     color: var(--medium-color) !important;
+     border-left: 2px solid var(--medium-color);
+     padding-left: 30px;
+     margin: 0px 0px 0px 30px; }
+ .bright .sqs-block-button-element--small:hover:after {
+     color: var(--darkest-color) !important;
+     border-left: 2px solid var(--darkest-color) !important; }
+
+/* Black BKG (Darkest Color BKG) */
+ .black .sqs-block-button-element--small:after {
+     content: '➔';
+     color: var(--medium-color) !important;
+     border-left: 2px solid var(--medium-color);
+     padding-left: 30px;
+     margin: 0px 0px 0px 30px; }
+ .black .sqs-block-button-element--small:hover:after {
+     color: var(--darkest-color) !important;
+     border-left: 2px solid var(--darkest-color) !important; }
+
+/* Standard BKG */
+ .sqs-block-button-element--small:after {
+     content: '➔';
+     color: var(--darkest-color) !important;
+     border-left: 2px solid var(--darkest-color);
+     padding-left: 30px;
+     margin: 0px 0px 0px 30px; }
+ .sqs-block-button-element--small:hover:after {
+     color: white !important;
+     border-left: 2px solid white !important; }
+/* END BUTTON STYLING */
