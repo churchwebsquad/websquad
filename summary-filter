@@ -1,0 +1,4 @@
+>>> Inject into Page Header to start
+Documentation: https://www.squarewebsites.org/universal-filter?password=UniFilterSecret
+
+<script src="//assets.squarewebsites.org/custom-filter/custom-filter.min.js"></script>
