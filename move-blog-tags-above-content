@@ -1,0 +1,70 @@
+>> This CSS adjusts standard blog pages so that the tags (used for sermon series) appear above the content instead of at the bottom of the page. Pagniation is removed.
+
+/* --- Move Blog Tag Above Content --- */
+/* Moving the tags */
+.blog-item-content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling the tags */
+.blog-item-wrapper .blog-meta-item--tags {
+  margin-bottom: 30px;
+  margin-top: 0;
+  order: -1;
+  text-align: center;
+}
+
+/* Adding "titles" to both categories and tags */
+.blog-item-wrapper .blog-meta-item--tags::before {
+  content: 'Speaker:';
+  font-weight: bold;
+  margin-right: 5px;
+}
+.blog-meta-item--categories::before {
+  content: 'Series:';
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Removing the pagniation */
+#itemPagination {
+  display: none !important;
+}
+
+/* "Other Messages" Header */
+.blog-item-wrapper .summary-header-text {
+    font-size: 1.5em;
+    margin-bottom: 6px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+/* round thumbnail */
+.blog-item-wrapper article.entry  .summary-thumbnail {
+    border-radius: 15px !important;
+}
+
+/* Add | as sepaerator between meta data */
+.blog-item-wrapper article.entry  .summary-metadata + .summary-metadata > *:before {
+    content: "|";
+    margin: 0 0.3em;
+    padding-right: 5px;
+    color: var(--light-color);
+}
+
+.sqs-block-summary-v2 .summary-block-setting-secondary-metadata-tags .summary-item-has-tags .summary-metadata--primary .summary-metadata-item:after {
+  display: none;
+}
+
+/* Make Series Title bolder */
+.blog-item-wrapper article.entry  .summary-metadata--primary .summary-metadata-item {
+    font-weight: 800;
+}
+
+/* "Other Messages" BKG Rounded */
+.sqs-background-enabled.sqs-block-summary-v2 {
+border-radius: 15px;
+filter: drop-shadow(10px 10px 0 var(--light-color));
+  margin: 15px;
+}
