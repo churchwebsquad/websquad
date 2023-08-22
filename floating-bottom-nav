@@ -1,0 +1,134 @@
+<!-- HTML Code Block - Add to Footer -->
+<div id="floating-nav-wrapper">
+<div class="multi-button-wrapper">
+ <img class="profile-img" src="***" alt="***" width="auto" height="50" style="border-radius:55px; border: solid 3px black;">
+<h4 .heading>Floating Nav - requires css & js </h4>  
+  <div class="multi-buttons">
+<div class="sqs-block-button-container" data-animation-role="button">
+  <a href="#***" class="sqs-button-element--primary sqs-block-button-element">
+    BUTTON 1 TEXT
+  </a>
+</div>
+
+<div class="sqs-block-button-container" data-animation-role="button">
+  <a href="***" target="_blank" class="sqs-button-element--secondary sqs-block-button-element">
+    BUTTON 2 TEXT
+  </a>
+</div>
+  </div>
+</div></div>
+
+<style>
+/* Floating Bottom Nav */
+#floating-nav-wrapper {
+  overflow: hidden;
+  animation: slide-up 2s ease;
+  background-color: var(--dark-color);
+  border: 3px solid var(--medium-color);
+  border-radius: 999px;
+  bottom: 40px;
+  box-shadow: 5px 5px 0px 0px var(--medium-color);
+  left: 0%;
+  margin: 0 auto;
+  padding: 10px;
+  position: fixed;
+  right: 0%;
+  text-align: center;
+  width: max-content;
+  z-index: 999;
+  
+}
+
+#floating-nav-wrapper::before {
+  content: '';
+  position: absolute; 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; 
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: 75%;
+background-position: top -110px right -15px;
+  opacity: .125;
+z-index: -1;
+}
+
+#floating-nav-wrapper h4 {
+  line-height: 200%;
+  margin: 0;
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 740px) {
+  #floating-nav-wrapper h4, #floating-nav-wrapper .profile-img {
+    display: none;
+  }
+}
+
+body.header--menu-open #floating-nav-wrapper {
+    display: none;
+}
+
+footer {
+  z-index: 99 !important;
+}
+
+/* Animations */
+@keyframes slide-up {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(150px);
+    visibility: hidden;  
+  }
+}
+
+/* Side by Side Buttons */
+.multi-button-wrapper, .multi-buttons {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.multi-buttons, .sqs-block-button-container {
+  gap: 15px;
+  justify-content: flex-start;
+    flex-wrap: wrap;
+  display: flex;
+}
+</style>
+
+<!-- Sticky Bottom Nav -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function() {
+        let st = window.pageYOffset || document.documentElement.scrollTop;
+        let isMobile = window.innerWidth <= 600; // Check if on mobile
+
+        if (st > lastScrollTop) {
+            // Scrolling down
+            document.getElementById('floating-nav-wrapper').style.animation = 'slide-up 1s ease';
+        } else {
+            if (!isMobile) {
+                // Scrolling up, only on non-mobile screens
+                document.getElementById('floating-nav-wrapper').style.animation = 'slide-down 0.5s ease forwards';
+            }
+        }
+        lastScrollTop = st <= 0 ? 0 : st; // For negative values
+    }, false);
+});
+</script>
