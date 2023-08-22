@@ -1,0 +1,38 @@
+>>> Line expands from left on hover
+>> Sublinks change color on hover
+
+//Hover Menu Animation//
+.header-nav-folder-title::after, .header-nav-folder-item a::after,  {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--medium-color);
+  transform-origin: bottom left;
+  transition: transform 0.25s ease;
+}
+
+.header-nav-folder-item a {
+   transition-duration: 0.5s; 
+}
+
+.header-nav-folder-item a:hover {
+  color: var(--medium-color) !important;
+}
+
+.header-nav-folder-title:hover::after, .header-nav-folder-item a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+body:not(.header--menu-open) .header-nav-item--active>a {
+  background-image: linear-gradient(var(--medium-color),var(--medium-color));}
+
+//Expanding Dropdown Menu Spacing//
+.header-nav-folder-item a {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
