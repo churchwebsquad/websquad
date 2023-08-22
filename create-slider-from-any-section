@@ -1,0 +1,14 @@
+>>> Code purchased. Do not redistribute or use outside of squad sites.
+
+Inject in Site Header
+<!--Full Section Slider JS-->
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/willmyethewebsiteguy/sectionSlider@3.3/styles.min.css" rel="stylesheet">
+
+Inject in Site Footer
+<!--Full Section Slider JS-->
+<script
+  src="https://cdn.jsdelivr.net/gh/willmyethewebsiteguy/sectionSlider@3.3/javascript.min.js"></script>
+
+Add Code to First Section
+<div data-wm-plugin="section-slider" data-slides-count="3" data-auto-play="4000"></div>
