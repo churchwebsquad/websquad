@@ -1,0 +1,146 @@
+>>> Buttons that hide and show sections accordingly
+
+<div class="toggle-container">
+  <button class="toggle-a" onclick="buttonA()">A Plans</button>
+  <button class="toggle-b open" onclick="buttonB()">B Plans</button>
+  <button class="toggle-c open" onclick="buttonC()">C Plans</button>
+</div>
+
+<script>  
+function buttonA() {
+    // Query Selectors
+    const sectionA = document.querySelector('section[data-section-id="data-section-a"]');
+    const sectionB = document.querySelector('section[data-section-id="data-section-b"]');
+    const sectionC = document.querySelector('section[data-section-id="data-section-c"]');
+    const sectionD = document.querySelector('section[data-section-id="data-section-d"]');
+    const sectionE = document.querySelector('section[data-section-id="data-section-e"]');
+    const toggleA = document.querySelector(".toggle-a");
+    const toggleB = document.querySelector(".toggle-b");
+    const toggleC = document.querySelector(".toggle-c");
+  
+    // Style changes
+    sectionA.style.display = "none";
+    sectionB.style.display = "none";
+    sectionC.style.display = "flex";
+    sectionD.style.display = "flex";
+    sectionE.style.display = "none";
+  
+    toggleA.classList.remove("open");
+    toggleB.classList.add("open");
+    toggleC.classList.add("open");
+}
+
+function buttonB() {
+    // Query Selectors
+    const sectionA = document.querySelector('section[data-section-id="data-section-a"]');
+    const sectionB = document.querySelector('section[data-section-id="data-section-b"]');
+    const sectionC = document.querySelector('section[data-section-id="data-section-c"]');
+    const sectionD = document.querySelector('section[data-section-id="data-section-d"]');
+    const sectionE = document.querySelector('section[data-section-id="data-section-e"]');
+    const toggleA = document.querySelector(".toggle-a");
+    const toggleB = document.querySelector(".toggle-b");
+    const toggleC = document.querySelector(".toggle-c");
+  
+    // Style changes
+    sectionA.style.display = "flex";
+    sectionB.style.display = "none";
+    sectionC.style.display = "none";
+    sectionD.style.display = "flex";
+    sectionE.style.display = "none";
+  
+    toggleA.classList.add("open");
+    toggleB.classList.remove("open");
+    toggleC.classList.add("open");
+}
+
+function buttonC() {
+    // Query Selectors
+    const sectionA = document.querySelector('section[data-section-id="data-section-a"]');
+    const sectionB = document.querySelector('section[data-section-id="data-section-b"]');
+    const sectionC = document.querySelector('section[data-section-id="data-section-c"]');
+    const sectionD = document.querySelector('section[data-section-id="data-section-d"]');
+    const sectionE = document.querySelector('section[data-section-id="data-section-e"]');
+    const toggleA = document.querySelector(".toggle-a");
+    const toggleB = document.querySelector(".toggle-b");
+    const toggleC = document.querySelector(".toggle-c");
+  
+    // Style changes
+    sectionA.style.display = "none";
+    sectionB.style.display = "flex";
+    sectionC.style.display = "none";
+    sectionD.style.display = "none";
+    sectionE.style.display = "flex";
+  
+    toggleA.classList.add("open");
+    toggleB.classList.add("open");
+    toggleC.classList.remove("open");
+}
+
+</script>
+
+<style>
+/* Toggle Buttons Base Style */
+.toggle-a, .toggle-b, .toggle-c {
+    border: 1px solid var(--primaryButtonBackgroundColor) !important;
+    background-color: var(--primaryButtonBackgroundColor); 
+    border-radius: 300px;
+    border-width: 0;
+    color: var(--primaryButtonTextColor);
+    font-family: normalidad-extended;
+    font-style: normal;
+    font-weight: 700;
+    font-size: .8rem;
+    letter-spacing: 0em;
+    line-height: 15px;
+    margin: 15px !important;
+    padding: 15px;
+    text-align: center !important;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+/* Open State for Toggle Buttons */
+.open {
+    border: 1px solid var(--primaryButtonBackgroundColor) !important;
+    color: var(--primaryButtonBackgroundColor) !important;
+    background-color: transparent !important;
+}
+
+.open:hover {
+    color: var(--primaryButtonTextColor) !important;
+    background-color: var(--primaryButtonBackgroundColor) !important; 
+}
+
+/* Toggle Container Styles */
+.toggle-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .toggle-container {
+        flex-direction: column;
+    }
+}
+
+/* Hide sections on load */
+section[data-section-id="data-section-a"], 
+section[data-section-id="data-section-b"], 
+section[data-section-id="data-section-c"] {
+    display: none;
+}
+
+/* Additional Styles */
+section[data-section-id="data-section-d"] h3, 
+section[data-section-id="data-section-d"] p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section[data-section-id="data-section-d"] h3 {
+    white-space: pre-line;
+}
+
+</style>
