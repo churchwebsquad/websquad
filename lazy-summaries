@@ -1,0 +1,6 @@
+>>> Add to Footer injection
+<!-- Lazy Summaries -->
+<script src="https://assets.squarewebsites.org/lazy-summaries/lazy-summaries.min.js"></script>
+<script>
+!function(){window.self===window.top||window.top.document.getElementById("lazy-summaries-admin")||function(e,t,s,i,a){if(s.querySelector("#"+t))i&&i(this);else{var n=document.createElement("script");n.src=e+"?cache="+((new Date).getTime()+"").substr(0,8),n.id=t,n.onload=function(){a&&this.remove(),i&&i(this)},s.appendChild(n)}}("https://assets.squarewebsites.org/lazy-summaries/lazy-summaries-admin.js","lazy-summaries-admin",window.top.document.getElementsByTagName("head")[0])}();
+</script>
