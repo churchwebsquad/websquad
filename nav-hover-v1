@@ -1,3 +1,5 @@
+>>> Line expands from center on hover
+
 /* Stretchy Navigation Line */
 .header-nav-item:not(.header-nav-item--active)::after {
   background: var(--medium-color);
