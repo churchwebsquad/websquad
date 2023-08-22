@@ -12,6 +12,17 @@
   </div>
 </div>
 
+<style>
+// Livestream Video - Visibility Toggle //
+.live-now {
+display: block;
+}
+
+.not-live {
+display: none;
+}
+</style>
+
 <script>
   function refreshAt(hours, minutes, seconds) {
     var now = new Date();
