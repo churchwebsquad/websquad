@@ -1,0 +1,15 @@
+/* Stretchy Navigation Line */
+.header-nav-item:not(.header-nav-item--active)::after {
+  background: var(--medium-color);
+  content: '';
+  display: block;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: -2px !important;
+  transition: width 1s;
+  width: 0;
+}
+
+.header-nav-item:hover::after {
+  width: 100%;
+}
