@@ -1,4 +1,5 @@
 >> This CSS adjusts standard blog pages so that the tags (used for sermon series) appear above the content instead of at the bottom of the page. Pagniation is removed.
+>>> Adds Speaker and Series text to tags and categories
 
 /* --- Move Blog Tag Above Content --- */
 /* Moving the tags */
