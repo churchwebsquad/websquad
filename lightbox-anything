@@ -2,7 +2,15 @@
 
 HOW TO USE:
 1. Uplaod CSS and JS to the site
-2. Add #lightbox_ to the start of any link
+2. Add JS to Footer
+3. Add #lightbox_ to the start of any link
+
+>>> Add to Footer
+<!-- Plugin Lightbox -->
+<link href="/s/plugin-lightbox.css" rel="stylesheet">
+<script src="/s/plugin-lightbox.js"></script>
+<script>pluginLightbox();</script>
+<!-- end Plugin Lightbox -->
 
 CSS
 /*!
