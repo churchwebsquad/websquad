@@ -1,0 +1,29 @@
+- Creates a sticky event title
+- Remove backlinks to events (since this page is usually not used)
+
+/* --- EVENTS --- */
+@media screen and (min-width: 480px) {
+/*Events Pages - Title */
+/*Sticky Title*/
+.eventitem-column-meta {position:sticky!important; top: 5vh!important}
+}
+
+/*Title Formatting*/
+.eventitem-title {
+  color: var(--medium-color);
+  text-decoration: underline;
+  margin-bottom: 10px !important;
+}
+
+/*Events Page - Background */
+.eventitem-column-meta {
+  background:  var(--lightest-color);;
+  padding: 25px;
+height: fit-content; 
+  border-right: 5px solid  var(--medium-color);;
+}
+
+/*Remove back to events link*/
+.eventitem-backlink {
+  display: none;
+}
