@@ -1,0 +1,12 @@
+/*Custom Bullet Points*/
+ul[data-rte-list] li>:first-child:before {
+    content: " " !important;
+background-image: url('***');
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position: center;
+  max-height:20px;
+  max-width:30px;
+  margin-top: -9.1px;
+  vertical-align: middle;
+}
