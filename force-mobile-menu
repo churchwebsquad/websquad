@@ -1,0 +1,24 @@
+/* Force Mobile Menu for Tablet */
+@media screen and (max-width:925px) {
+
+	/* hide navigation */
+	.header-nav {
+		display: none;
+	}
+
+	/* Hide header button */
+	.header-actions {
+		display: none;
+	}
+
+	/* show burger */
+	.header-burger {
+		display: flex;
+	}
+
+	/* Show overlay mobile menu */
+	.header--menu-open .header-menu {
+		opacity: 1;
+		visibility: visible;
+	}
+}
