@@ -1,0 +1,4 @@
+/*Remove Squarespace Code Block Notices for Sizing*/
+html.squarespace-damask .sqs-blockStatus, html.squarespace-damask .sqs-blockStatus, .sqs-block .removed-script {
+    display: none !important;
+}
