@@ -1,0 +1,14 @@
+/* Rounded Inset BKG */
+.background-width--inset .section-background,
+.background-width--inset .section-background .section-background-canvas,
+.background-width--inset .section-background .section-background-canvas canvas{
+	border-radius:20px !important;
+    -webkit-border-radius: 20px !important; 
+    -moz-border-radius: 20px !important;
+}
+.background-width--inset .section-background{
+  	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+}
