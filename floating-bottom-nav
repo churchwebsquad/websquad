@@ -2,7 +2,7 @@
 <div id="floating-nav-wrapper">
 <div class="multi-button-wrapper">
  <img class="profile-img" src="***" alt="***" width="auto" height="50" style="border-radius:55px; border: solid 3px black;">
-<h4 .heading>Floating Nav - requires css & js </h4>  
+<h4>Floating Nav - requires css & js </h4>  
   <div class="multi-buttons">
 <div class="sqs-block-button-container" data-animation-role="button">
   <a href="#***" class="sqs-button-element--primary sqs-block-button-element">
