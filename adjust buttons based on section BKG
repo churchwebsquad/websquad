@@ -3,104 +3,69 @@
 /* -- Primary Button (medium size) -- */
 /* Bright BKG (Medium Color BKG) */
  .bright .sqs-block-button .sqs-block-button-element--medium {
-     box-shadow: 5px 5px white;
-     transition: all ease-in .05s; }
+     [BRIGHT BKG PRIMARY BUTTON STYLING HERE]
+}
  .bright .sqs-block-button .sqs-block-button-element--medium:hover {
-     opacity: 1 !important;
-     box-shadow: none;
-     transform: translateY(4px) !important;
-     transition: all ease-in .05s; }
+     [BRIGHT BKG PRIMARY BUTTON HOVER STYLING HERE]
+}
 
 /* Black BKG (Darkest Color BKG) */
  .black .sqs-block-button .sqs-block-button-element--medium {
-     box-shadow: 5px 5px white;
-     transition: all ease-in .05s; }
+     [BLACK BKG PRIMARY BUTTON STYLING HERE]
+}
  .black .sqs-block-button .sqs-block-button-element--medium:hover {
-     opacity: 1 !important;
-     box-shadow: none;
-     transform: translateY(4px) !important;
-     transition: all ease-in .05s; }
+     [BLACK BKG PRIMARY BUTTON HOVER STYLING HERE]
+}
 
 /* Standard BKG + Homepage Plus List Buttons */
- .sqs-block-button .sqs-block-button-element--medium, section[data-section-id="6570fc55570619142f9eb366"] .list-item-content__button {
-     box-shadow: 5px 5px var(--medium-color);
-     transition: all ease-in .05s; }
- .sqs-block-button .sqs-block-button-element--medium:hover, section[data-section-id="6570fc55570619142f9eb366"] .list-item-content__button:hover {
-     opacity: 1 !important;
-     box-shadow: none;
-     transform: translateY(4px) !important;
-     transition: all ease-in .05s; }
+ .sqs-block-button .sqs-block-button-element--medium, section[data-section-id="REPLACE WITH CAROUSEL SECTION ID"] .list-item-content__button {
+     [STANDARD BKG PRIMARY BUTTON STYLING HERE]
+}
+ .sqs-block-button .sqs-block-button-element--medium:hover, section[data-section-id="REPLACE WITH CAROUSEL SECTION ID"] .list-item-content__button:hover {
+     [STANDARD BKG PRIMARY BUTTON HOVER STYLING HERE]
+}
 
 
 /* -- Secondary Button (large size) -- */
 /* Bright BKG (Medium Color BKG) */
  .bright .sqs-block-button .sqs-block-button-element--large {
-     box-shadow: 5px 5px white; 
-     transition: all ease-in .05s; }
+     [BRIGHT BKG SECONDARY BUTTON STYLING HERE]
+}
  .bright .sqs-block-button .sqs-block-button-element--large:hover {
-     opacity: 1 !important;
-     box-shadow: none;
-     transform: translateY(4px) !important;
-     transition: all ease-in .05s; }     
+     [BRIGHT BKG SECONDARY BUTTON HOVER STYLING HERE]
+ }     
 
 /* Black BKG (Darkest Color BKG) */
  .black .sqs-block-button .sqs-block-button-element--large {
-     box-shadow: 5px 5px var(--medium-color); 
-     transition: all ease-in .05s; }
+     [BLACK BKG SECONDARY BUTTON STYLING HERE]
+ }
  .black .sqs-block-button .sqs-block-button-element--large:hover {
-     opacity: 1 !important;
-     box-shadow: none;
-     transform: translateY(4px) !important;
-     transition: all ease-in .05s; }   
+     [BLACK BKG SECONDARY BUTTON HOVER STYLING HERE]
+}   
 
 /* Standard BKG */
  .sqs-block-button .sqs-block-button-element--large {
-     box-shadow: 5px 5px var(--medium-color); 
-     transition: all ease-in .05s; }
+     [STANDARD BKG SECONDARY BUTTON STYLING HERE] 
+}
  .sqs-block-button .sqs-block-button-element--large:hover {
-     opacity: 1 !important;
-     box-shadow: none;
-     transform: translateY(4px) !important;
-     transition: all ease-in .05s; }   
+     [STANDARD BKG SECONDARY BUTTON HOVER STYLING HERE]
+ }   
 
 
 /* -- Tertiary Button (small size) -- */
 /* Bright BKG (Medium Color BKG) */
 .bright .sqs-block-button-element--small {
-  background-color: var(--darkest-color) !important;
-  color: var(--medium-color) !important; }
+     [BRIGHT BKG SECONDARY BUTTON STYLING HERE]
+ }
 
 .bright .sqs-block-button-element--small:hover {
-  background-color: transparent !important;
-  color: var(--darkest-color) !important; }
-.bright .sqs-block-button-element--small:after {
-     content: '➔';
-     color: var(--medium-color) !important;
-     border-left: 2px solid var(--medium-color);
-     padding-left: 30px;
-     margin: 0px 0px 0px 30px; }
- .bright .sqs-block-button-element--small:hover:after {
-     color: var(--darkest-color) !important;
-     border-left: 2px solid var(--darkest-color) !important; }
+     [BRIGHT BKG SECONDARY BUTTON HOVER STYLING HERE]
+}
+
 
 /* Black BKG (Darkest Color BKG) */
  .black .sqs-block-button-element--small:after {
-     content: '➔';
-     color: var(--medium-color) !important;
-     border-left: 2px solid var(--medium-color);
-     padding-left: 30px;
-     margin: 0px 0px 0px 30px; }
+     [BLACK BKG SECONDARY BUTTON STYLING HERE] }
  .black .sqs-block-button-element--small:hover:after {
-     color: var(--darkest-color) !important;
-     border-left: 2px solid var(--darkest-color) !important; }
+     [BLACK BKG SECONDARY BUTTON HOVER STYLING HERE] }
 
-/* Standard BKG */
- .sqs-block-button-element--small:after {
-     content: '➔';
-     color: var(--darkest-color) !important;
-     border-left: 2px solid var(--darkest-color);
-     padding-left: 30px;
-     margin: 0px 0px 0px 30px; }
- .sqs-block-button-element--small:hover:after {
-     color: white !important;
-     border-left: 2px solid white !important; }
