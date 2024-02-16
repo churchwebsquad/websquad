@@ -1,4 +1,4 @@
-<!-- HTML Code Block - Add to Footer -->
+-----------INSERT HTML BLOCK - ADD AS CODE BLOCK TO WEBSITE FOOTER
 <div id="floating-nav-wrapper">
 <div class="multi-button-wrapper">
  <img class="profile-img" src="***" alt="***" width="auto" height="50" style="border-radius:55px; border: solid 3px black;">
@@ -18,6 +18,8 @@
   </div>
 </div></div>
 
+
+-----------CUSTOM CSS
 <style>
 /* Floating Bottom Nav */
 #floating-nav-wrapper {
@@ -110,6 +112,7 @@ footer {
 }
 </style>
 
+-----------JAVASCRIPT ADD TO CODE INJECION - SITE FOOTER
 <!-- Sticky Bottom Nav -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
