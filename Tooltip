@@ -1,0 +1,70 @@
+-----CSS:
+/* Tooltip Styling */
+a[data-tippy-content] {
+  color:  var(--darkest-color);
+  background-color: var(--light-color);
+  padding: 1.5px 9px 0 9px;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.tippy-box {
+  background-color: var(--light-color);
+  color: var(--darkest-color);
+}
+
+.tippy-arrow {
+  color: var(--light-color);
+}
+
+-----HTML:
+
+    <li><p>LINE HERE<a data-url="TOOLTIP LINK" href="#tooltip_ TOOLTIP BODY CODEY HERE">TOOLTIP ICON HERE/TYPICALLY LOWERCASE i</a> </li> 
+
+-----Header Injection Javascript:
+<!-- Tooltip Functionality -->
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-latest.js"></script>
+<!-- Popper -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<!-- Tippy -->
+<script src="https://unpkg.com/tippy.js@6"></script>
+
+<script language="javascript">
+$(document).ready(function() {
+    // Allow or disallow html in tooltips (default = false)
+    tippy.setDefaultProps({allowHTML: true}); 
+
+    let tooltip_elements = $('a[href^="#tooltip_"]');
+    tooltip_elements.each(function(i){
+        let link = $(this).attr('href');
+        let tip = link.replace('#tooltip_', '');
+
+        // Get the [data-url] attribute
+        const url = $(this).attr("data-url") || "#";
+        
+        // Create an anchor wrapping the tooltip content with the URL, target, and rel attributes
+        tip = `<a href="${url}" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; height: 100%;">${tip}</a>`;
+        $(this).attr('data-tippy-content', tip);
+        $(this).css("cursor", "pointer");
+        
+        if (url && url.startsWith("http")) {
+            $(this).attr("href", url);
+            // Add target and rel attributes to the tooltip triggering element
+            $(this).attr("target", "_blank");
+            $(this).attr("rel", "noopener noreferrer");
+        } else {
+            $(this).removeAttr("href");
+        }
+    });
+
+    tippy('[data-tippy-content]', {
+        interactive: true,
+        hideOnClick: false,
+        delay: [0, 300]
+    });
+});
+</script>
