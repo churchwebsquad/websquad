@@ -22,7 +22,7 @@ a[data-tippy-content] {
 
 -----HTML:
 
-    <li><p>LINE HERE<a data-url="TOOLTIP LINK" href="#tooltip_ TOOLTIP BODY CODEY HERE">TOOLTIP ICON HERE/TYPICALLY LOWERCASE i</a> </li> 
+    <li><p>LINE HERE<a data-url="TOOLTIP LINK" href="#tooltip_ TOOLTIP BODY CODEY HERE">TOOLTIP ICON HERE/TYPICALLY LOWERCASE i</a></p></li> 
 
 -----Header Injection Javascript:
 <!-- Tooltip Functionality -->
