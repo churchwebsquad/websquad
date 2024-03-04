@@ -4,6 +4,7 @@ HOW TO USE:
 1. Uplaod CSS and JS to the site (add a link to an empty page, upload these as linked files)
 2. Add JS to Footer
 3. Add #lightbox_ to the start of any link
+4. Style Lightbox pop up accordingly
 
 >>> Add to Footer
 <!-- Plugin Lightbox -->
