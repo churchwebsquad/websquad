@@ -1,0 +1,49 @@
+/*Display Church CSS*/
+/*Display Church Filters*/
+.dce-groups--filters--options_selected, .calendar-filters--options_selected {
+  margin: 5px !important;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding-right: 25px !important;
+}
+
+.dce-groups--filters--options_selected:before, .calendar-filters--options_selected:before {
+      content: '◀︎';  /* Down arrow symbol */
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-54%) rotate(270deg) scale(80%);
+  transition: 200ms;
+}
+
+.dce-groups--filters--options_selected.active:before, .calendar-filters--options_selected.active:before {
+    transform: translateY(-54%) rotate(90deg) scale(80%) !important;
+}
+
+<!-- Display Church Header Javascript Injection -->
+  <script async id="dce-embeddable-script" src="https://my.display.church/js/loader.min.js"></script>
+
+  <!-- Display Church Footer Javascript Injection -->
+  <script>
+document.addEventListener("DOMContentLoaded", function() {
+    var selectors = document.querySelectorAll('.dce-groups--filters--selector, .calendar-filters--options_selected');
+
+    selectors.forEach(function(selector) {
+        // Append the arrow icon to each selector
+        let arrow = document.createElement('span');
+        arrow.classList.add('arrow-icon');
+        arrow.textContent = '▼';  // Start with the down arrow
+        selector.appendChild(arrow);
+
+        selector.addEventListener('click', function() {
+            if (this.classList.contains('clicked')) {
+                this.classList.remove('clicked');
+                arrow.textContent = '▼';  // Down arrow
+            } else {
+                this.classList.add('clicked');
+                arrow.textContent = '▲';  // Up arrow
+            }
+        });
+    });
+});
+</script>
