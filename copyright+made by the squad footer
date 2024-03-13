@@ -1,0 +1,21 @@
+<style>
+  @media (max-width: 768px) {
+    .responsive-container {
+      justify-content: flex-start !important; /* Align items to the left on smaller screens */
+      flex-wrap: wrap; /* Allow items to wrap */
+    }
+    .responsive-container hr {
+      display: none; /* Hide the line on smaller screens */
+    }
+    .responsive-container p {
+      white-space: normal; /* Allow text wrapping */
+      padding-right: 0; /* Adjust padding for better alignment */
+    }
+  }
+</style>
+
+<div class="responsive-container" style="display: flex; align-items: center; justify-content: space-between; text-align: right; width: 100%;">
+  <p style="font-size: 13px; margin: 0; padding-right: 10px; white-space: nowrap; flex-shrink: 0;">© Church Name<script>document.write(new Date().getFullYear())</script></p>
+  <hr style="flex-grow: 1; flex-shrink: 1; border: none; border-top: 1px solid var(--light-color); margin: 0 10px;">
+  <p style="font-size: 13px; margin: 0; padding-left: 10px; white-space: nowrap; flex-shrink: 0;">Created by <a href="https://churchmediasquad.com/" target="_blank">Church Media Squad</a></p>
+</div>
