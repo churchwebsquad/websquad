@@ -1,0 +1,21 @@
+/*Staff Page - Email Buttons*/
+#collection-65c698a8a7a3934c93c83c26 { div.user-items-list-carousel__gutter .sqs-block-button-element::after {
+content: '';
+  display: inline-block;
+  background-size: contain !important;
+background-repeat: no-repeat !important;
+  background-position: center !important;
+  background: url("https://static1.squarespace.com/static/65c510001587f859d3883328/t/65e919fe20a0a93567fb4c21/1709775358306/2357-emailicon-white+%281%29.png");
+  width: 20px !important;
+  height: 18px !important;
+     }
+
+  div.user-items-list-carousel__media-container div img {
+    border-radius: 10px;
+  }
+
+}
+
+#collection-65c698a8a7a3934c93c83c26 div.user-items-list-carousel__gutter  .sqs-button-element--primary {
+  padding: 9px;
+}
