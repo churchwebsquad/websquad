@@ -1,0 +1,344 @@
+/* Colors */
+:root {  
+--darkest-color: #373A36;  
+--dark-color: #929391;  
+--medium-color: #CBD654;  
+--light-color: #f5f5f5;  
+--lightest-color: #ffffff;
+}
+
+/*Image Treatment*/
+img {
+    border: 0;
+    border-radius: 10px;
+}
+
+/*Homepage Video Border Radius*/
+#block-yui_3_17_2_1_1709656648227_57363, #block-yui_3_17_2_1_1707938884790_14984,#block-075f5ca49687e27b489b div div div div div div.plyr__video-wrapper video, /*Troy Pg*/#block-yui_3_17_2_1_1709841079388_8165 div div div div div div.plyr__video-wrapper video {
+  border-radius: 10px !important;
+  overflow: clip;
+}
+
+/*Buttons*/
+.sqs-button-element--primary {
+  font-family: 'Gotham Ultra' !important;
+}
+
+.sqs-button-element--secondary {
+  font-family: 'Gotham Ultra' !important;
+}
+
+/* Smooth Scrolling */
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
+/*Display Church Filters*/
+.dce-groups--filters--options_selected, .calendar-filters--options_selected {
+  margin: 5px !important;
+  font-weight: 700;
+  letter-spacing: 0;
+  padding-right: 25px !important;
+}
+
+.dce-groups--filters--options_selected:before, .calendar-filters--options_selected:before {
+      content: '◀︎';  /* Down arrow symbol */
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-54%) rotate(270deg) scale(80%);
+  transition: 200ms;
+}
+
+.dce-groups--filters--options_selected.active:before, .calendar-filters--options_selected.active:before {
+    transform: translateY(-54%) rotate(90deg) scale(80%) !important;
+}
+
+.month-selector--filters-button {
+  display: none;
+}
+
+/*Custom Font - Gotham*/
+@font-face {
+
+    font-family: 'Gotham Book';
+
+       src: url('https://static1.squarespace.com/static/65c510001587f859d3883328/t/65c51456611a960516287e33/1707414614929/Gotham-Book.otf');
+
+  }
+
+p  {font-family: 'Gotham Book';}
+
+.header-nav-item a {
+    display: block;
+    font-family: 'Gotham Book';
+}
+
+#footer-sections .sqs-block-html a {
+    display: inline-block;
+  	font-family: 'Gotham Book'
+}
+
+
+/*Custom Font - Gotham Ultra*/
+@font-face {
+
+    font-family: 'Gotham Ultra';
+
+       src: url(https://static1.squarespace.com/static/65c510001587f859d3883328/t/65cbe02757638f4b4428d840/1707860007692/Gotham-Ultra.otf);
+
+  }
+
+h1, h2, h4, h3, a
+{
+  font-family: 'Gotham Ultra';
+  text-transform: uppercase;
+}
+
+.blog-item-wrapper .blog-item-title h1.entry-title {
+    color: var(--tweak-blog-item-title-color);
+    font-family: 'Gotham Ultra';
+}
+
+
+
+// Divider Lines Between Folder Links - Ghost //
+
+.header-nav .header-nav-item--folder .header-nav-folder-content .header-nav-folder-item { 
+  padding: 15px 0px; 
+  border-bottom: 1px solid #373A36; 
+} 
+
+.header-nav .header-nav-item--folder .header-nav-folder-content .header-nav-folder-item:last-child { 
+  border-bottom: none !important;
+}
+
+
+
+/*GET STARTED HMPG SECTION START*//* --- List carousel IMG as clickable link --- */
+section[data-section-id="65cd1e956abc5a7228a0e9e4"]
+{
+  li .list-item-content__title {
+   
+  }
+  
+li.list-item {
+    position: relative !important;
+}
+  
+.list-item-content__button-container {
+    position: absolute !important;
+    top: 0;
+	width: 100%;
+  	bottom: 0;
+}
+a.list-item-content__button.sqs-block-button-element {
+    position: relative;
+  text-decoration: underline 2px var(--medium-color);
+    top: 87%;
+	padding: 0 0 !important;
+    left: 5.5%;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    color: #fff !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+  /*IMAGE*/
+  .list-image, .user-items-list-carousel__media {
+    opacity: 100%;
+      mask-image: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.10) 100%);
+    -webkit-mask-image: linear-gradient(180deg, rgba(0, 0, 0, 100) 30%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 10px;
+
+}
+
+.list-item-content__text-wrapper {
+  position: absolute;
+  bottom: 15%;
+  max-width: 100%;
+  min-width: 75%;
+  }}
+/*GET STARTED SECTION END*/
+
+/*Gallery Images*/
+.sqs-gallery-block-grid.sqs-gallery-aspect-ratio-square .slide .margin-wrapper a.image-slide-anchor {
+  border-radius: 10px;
+}
+
+/*Newsletter Block*/
+.newsletter-block .newsletter-form-field-element {
+    width: 100%;
+    padding: 1.25rem !important;
+    background: rgb(255, 255, 255);
+    transition: background 0.3s ease-out 0s, border 0.3s ease-out 0s;
+    border-radius: 100px;
+}
+
+
+// Inset Page Section border Radius - Ghost //
+
+.page-section.background-width--inset .section-background {
+  border-radius: 20px !important;
+}
+// Content Block Pointer Events//
+
+/*homepage*/ div.fe-block-fb2e61b5a5d2136de2ca,div.fe-block-f3d7a075c8204a200f4e,div.fe-block-307e9c7e1cac754c9563,div.fe-block-f3c47a9d6fbe84568bc7, /*stcharles pg*/ div.fe-block-d3982c92a7bc6b41377b, div.fe-block-90254d39a3da4256a159, div.fe-block-8ab739020681b87b5d2d, div.fe-block-7a2b24a1e7fe6442fa0d, /*troy pg*/ div.fe-block-0c8d2a0e1ceaa7bf4a1a, div.fe-block-263fd2c5c0c03ba89b23, div.fe-block-f8f5c2690cb5cc54eecf, div.fe-block-60c2c48080d8c77a07b1, div.fe-block-fda9bb3ebaa62ae7fbdd, div.fe-block-b7abc37875c779f922cf {
+    pointer-events: none;
+}
+
+
+/* Stretchy Navigation Line */
+.header-nav-item:not(.header-nav-item--active)::after {
+  background: var(--medium-color);
+  content: '';
+  display: block;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: -2px !important;
+  transition: width 1s;
+  width: 0;
+}
+
+.header-nav-item:hover::after {
+  width: 100%;
+}
+
+// Zoom Me In Hover - Image Block //
+section[data-section-id="65cce42e8b1e495fd391e9cb"],
+section[data-section-id="65d79080a20bfb0d217b03ee"],
+section[data-section-id="65dca93117a797785f3ce279"],
+/*st charles campus page*/section[data-section-id="65e9f1c8239bdd2fc572969e"], 
+section[data-section-id="65e9f6ea5760ce22797de323"], 
+/*Troy Campus PG*/ section[data-section-id="65ea182beb21457f41ec956f"],section[data-section-id="65e8be3dc7afa41a225280d2"] 
+{
+ .sqs-block-image img {
+  transform: scale(1) !important;
+  transition: all ease-in-out 1s !important;
+}
+
+.sqs-block-image:hover img {
+  transform: scale(1.1) !important;
+  transition: all ease-in-out 1.2s !important;
+}
+}
+
+
+//---MOBILE NAV DROPDOWN LIST-----
+@itemFontSize: 8.5vmin;
+@subItemFontSize: 20px;
+@subItemColor: var(--medium-color);
+@subItemIndent: 15px;
+@arrowThickness: 3px;
+
+.header-menu-nav-item{opacity: 1!important;}.header-menu-nav{opacity:0; transition:opacity .25s linear;}.header-menu-nav.loaded{opacity:1;}.header-menu-nav-folder[data-folder="root"] .header-menu-nav-folder-content{display:block;margin-top:0!important;margin-bottom:0!important;}.header-menu-nav-folder .header-menu-nav-folder{position:relative;height:auto;overflow:hidden}.header-menu-nav-folder-content .header-menu-nav-folder-content{overflow:hidden} .header-menu-nav-item a{font-size:@itemFontSize;} .header-menu-nav-item >a[data-folder-id]{margin-bottom:0;}.header-menu-nav-item .header-menu-nav-item, .language-picker-content .header-menu-nav-item{padding-left: @subItemIndent!important;a{font-size:@subItemFontSize!important;color:@subItemColor!important}}.header-menu-nav-item .header-menu-nav-folder{padding-bottom:1em}.header-menu-controls{display:none!important }.header-menu-nav-folder{-webkit-transform:translatex(0);-ms-transform:translatex(0);transform:translatex(0)}.header-menu-nav-folder-content{position:relative;}
+.chevron--right{border: none;
+transform: translateY(30%);margin-left:5px;&:after {content:'';position: absolute;inset:0;border-bottom: @arrowThickness solid currentColor;
+border-right: @arrowThickness solid currentColor;transform: translateY(-50%) rotate(45deg);
+transition: transform .3s ease;}}
+.header-menu-nav-item .is-open .chevron--right:after {transform: rotate(225deg);}.language-picker-mobile,.language-picker-mobile > a {display: block;}.header-menu-nav-folder:not([data-folder="root"]) {opacity:1!important;pointer-events:auto!important;}
+//---END MOBILE NAV DROPDOWN LIST--
+
+//*Nav Edits*//
+.header .header-layout-nav-right .header-nav .header-nav-item--folder .header-nav-folder-content {
+    left: auto;
+    right: -1em;
+    text-align: right;
+    border-radius: 10px;
+    padding-right: 20px;
+ }
+
+.header-nav .header-nav-item--folder .header-nav-folder-content .header-nav-folder-item {
+    padding: 8px 0px;
+    border-bottom: 1px solid #686a67;
+}
+
+:not(.header--menu-open) .header-nav-wrapper a {
+    color: var(--navigationLinkColor);
+    font-size: small;
+}
+
+
+/*Newsletter Button Styling*/
+.newsletter-block .newsletter-form-field-element, .newsletter-block .newsletter-form-button {
+    padding: 0.5rem 1.5rem !important;
+    line-height: 1.2rem !important;
+}
+
+.newsletter-block .newsletter-form-button-wrapper {
+    display: inline-block;
+    width: auto;
+    margin: 0 0 0 0;
+    padding: 0.5rem 0.25rem;
+}
+
+#collection-65c69898bdc1a349d3e38f41 .header-nav-item > a {
+  color: #fff;
+}
+
+:not(.header--menu-open) .burger-inner .top-bun, :not(.header--menu-open) .burger-inner .patty, :not(.header--menu-open) .burger-inner .bottom-bun {
+    background-color: #fff;
+}
+
+.site-wrapper .header-menu .header-menu-nav a:not(.btn) {
+    color: var(--menuOverlayNavigationLinkColor);
+    font-family: 'Gotham Ultra';
+}
+
+/* Round Carousel Cards */
+.user-items-list-carousel .list-item[data-is-card-enabled="true"] {
+  border-radius: 15px;
+}
+
+/* Plugin Lightbox - Custom Styles */
+html .fancybox-content, html .fancybox-content iframe {
+  border-radius: 10px !important;
+}
+
+html .c-lightbox__toolbar .c-lightbox__button:last-child {
+    margin-right: 2.8em !important;
+}
+
+html .c-lightbox__toolbar .c-lightbox__button {
+  margin-top: 2.8em !important;
+}
+
+html .c-lightbox .c-lightbox__button {
+    background: var(--dark-color);
+    border-radius: 100px;
+}
+
+html .c-lightbox__content-inner {
+  padding: 0;
+  background: 0 0;
+  border: 0 solid transparent;
+  border-radius: 10px;
+  color: transparent;
+}
+
+html .c-lightbox__overlay {
+  background: rgba(0,0,0,.37);
+}
+
+html .c-lightbox .c-lightbox__button.c-lightbox__close svg,html .c-lightbox__close[type=button] svg {
+  fill: white;
+  background-color: var(--dark-color);
+  padding: 5px;
+  border-radius: 100px;
+  opacity: 100%;
+}
+
+html .c-lightbox__close[type=button] {
+  margin: 10px;
+  width: 35px;
+  height: 35px;
+}
+/* end Plugin Lightbox - Custom Styles */
+
+/* Nav Items */
+.header-nav-item {
+  font-size: 1rem;
+}
