@@ -1,0 +1,51 @@
+/* Our Staff Email */
+body[COLLECTION ID HERE] {
+li.list-item {
+    position: relative !important;
+}
+.list-item-content__button-container {
+    position: absolute !important;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+a.list-item-content__button.sqs-block-button-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    z-index: 9999;
+    color: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+  
+li.list-item .user-items-list-carousel__media-inner::after {
+      content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://static1.squarespace.com/static/65c510001587f859d3883328/t/65f89689de116c0dc46b55a6/1710790281224/EmailOverlay+%281%29.png');
+      background-size: cover;
+  background-position: center;
+  pointer-events: none;
+  overflow: clip;
+  border-radius: 10px;
+opacity: 0;
+  transition: opacity 250ms;
+  }
+  
+   li.list-item:hover .user-items-list-carousel__media-inner::after {
+  opacity: 1;
+}
+  //Mobile Columns
+  @media (max-width: 767px) {
+.user-items-list-carousel__slides {
+  grid-template-columns: 2fr 1fr !important;
+    }}
+
+}
