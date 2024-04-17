@@ -14,3 +14,51 @@ HOW TO USE:
 <!-- end Plugin Lightbox -->
 
 >>>> FILES SAVED HERE: https://www.dropbox.com/scl/fo/opezijzzqr3fhj5qwmigh/h?rlkey=kruoepcu0ezmmlafi65xhkj60&dl=0
+
+
+
+>> Custom CSS Stying
+/* Plugin Lightbox - Custom Styles */
+html .fancybox-content, html .fancybox-content iframe {
+  border-radius: 10px !important;
+}
+
+html .c-lightbox__toolbar .c-lightbox__button:last-child {
+    margin-right: 2.8em !important;
+}
+
+html .c-lightbox__toolbar .c-lightbox__button {
+  margin-top: 2.8em !important;
+}
+
+html .c-lightbox .c-lightbox__button {
+    background: var(--dark-color);
+    border-radius: 100px;
+}
+
+html .c-lightbox__content-inner {
+  padding: 0;
+  background: 0 0;
+  border: 0 solid transparent;
+  border-radius: 10px;
+  color: transparent;
+}
+
+html .c-lightbox__overlay {
+  background: rgba(0,0,0,.37);
+}
+
+html .c-lightbox .c-lightbox__button.c-lightbox__close svg,html .c-lightbox__close[type=button] svg {
+  fill: white;
+  background-color: var(--dark-color);
+  padding: 5px;
+  border-radius: 100px;
+  opacity: 100%;
+}
+
+html .c-lightbox__close[type=button] {
+  margin: 10px;
+  width: 35px;
+  height: 35px;
+}
+/* end Plugin Lightbox - Custom Styles */
