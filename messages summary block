@@ -1,0 +1,83 @@
+/*SUMMARY BLOCK START*/
+.customFiltersContainer {
+  font-family: 'Gotham Book';
+}
+
+.customFiltersContainer  .defaultLabel {
+  font-weight: 700;
+    font-family: 'Gotham Ultra';
+}
+
+.custom-filter-container.custom-filter-view-dropdowns.lite-dropdowns .customFiltersWrapper .archive-block-wrapper .archive-dropdown-toggle-label, .custom-filter-container.custom-filter-view-dropdowns.lite-dropdowns .customFiltersWrapper .sqs-block .search-wrap .search-input {
+  border-color: var(--medium-color) !important;
+}
+
+[UPDATE WITH DATA SECTION ID] {
+.customFiltersWrapper .clearAllBtn {
+  border-radius: 100px;
+  background: var(--medium-color) !important;
+}
+  
+  .archive-group-list {
+    background: #f9f9f9 !important;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+  }
+
+  .summary-content {
+    padding: 15px;
+  }
+  
+.summary-metadata-item:after {
+  display: none;
+}
+
+.summary-metadata--primary {
+  font-weight: 700;
+}
+
+.summary-metadata-container .summary-metadata a {
+  pointer-events: none;
+}
+
+.summary-thumbnail img {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 5px 5px 0 0;
+} 
+
+  .summary-item {
+  background: #f9f9f9;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  }
+
+.summary-title-link {
+  font-family: var(--heading-font-font-family);
+  font-size: 25px;
+  font-weight: var(--heading-font-font-weight);
+}
+
+.summary-read-more-link {
+  background-color: var(--medium-color);
+  text-align: center !important;
+  padding: 10px;
+  border-radius: 100px;
+  color: black !important;
+  font-weight:700;
+  transition: 0.5s;
+}
+
+.summary-read-more-link:hover {
+  opacity: 75%;
+}
+
+
+
+
+div.sqs-gallery {
+  margin-bottom: 0 !important;
+}
+
+}
+/*SUMMARY BLOCK END*/
