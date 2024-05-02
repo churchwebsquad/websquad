@@ -1,0 +1,21 @@
+This code takes the last link in the main menu and converts it to a second nav button. Adjust padding, font, colors values as needed.
+
+/*SECOND MAIN NAV BUTTON*/
+.header-nav-item:last-of-type a {
+  border: [INPUT VALUES];
+  padding: [INPUT VALUES];
+  border-radius: [INPUT VALUES];
+  font-style: var(--header-button-font-font-style);
+  font-size: [INPUT VALUES] !important;
+  transition: 350ms;
+}
+
+.header-nav-item:last-of-type a:hover {
+  opacity: [INPUT VALUES] !important;
+}
+
+.header-nav-item {
+  display: flex;
+  align-items: center;
+}
+/*SECOND NAV BUTTON END*/
