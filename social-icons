@@ -1,0 +1,26 @@
+<style>
+    .social-icon {
+        background: var(--dark-color);
+        color: white;
+        padding: 12px;
+        font-size: 28px;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+    }
+    .social-container {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+    }
+</style>
+
+<div class="social-container">
+    <a href="https://www.instagram.com/lpazyouth/" target="_blank"><i class="fa-brands fa-instagram social-icon"></i></a>
+    <a href="https://www.facebook.com/lpazyouth" target="_blank"><i class="fa-brands fa-facebook-f social-icon"></i></a>
+    <a href="https://www.youtube.com/@lifepointeyouth-prescottva8480" target="_blank"><i class="fa-brands fa-youtube social-icon"></i></a>
+</div>
