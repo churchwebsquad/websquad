@@ -28,6 +28,10 @@
   }
 </style>
 
+-- Add this code to site footer injection --
+<!-- Secondary Nav -->
+<script src="https://cdn.jsdelivr.net/gh/willmyethewebsiteguy/secondaryNav@2/javascript.min.js"></script>
+
 -- Add this code to custom css --
 /*Secondary Nav*/
  #wm-subnav, .wm-secondary-mobile-nav{
