@@ -1,0 +1,14 @@
+/* --- Move Blog Tag Above Content --- */
+/* Moving the tags */
+.blog-item-content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling the tags */
+.blog-item-wrapper .blog-meta-item--tags {
+  margin-bottom: 30px;
+  margin-top: 0;
+  order: -1;
+  text-align: center;
+}
