@@ -1,0 +1,44 @@
+/*Carousel Cards - Remove Buttons*/
+[SECTION ID]
+{
+li.list-item{
+position:relative!important;
+transition:350ms;}
+
+li.list-item:hover{
+opacity:92%;}
+
+.list-item-content__button-container{
+position:absolute!important;
+top:0;
+width:100%;
+bottom:0;}
+
+a.list-item-content__button.sqs-block-button-element{
+position:absolute;
+top:0;
+left:0;
+width:120%;
+height:100%;
+z-index:9999;
+color:transparent!important;
+background-color:transparent!important;
+border:none!important;border-radius:0;}
+
+.list-image,.user-items-list-carousel__media{
+opacity:100%;
+mask-image:linear-gradient(360deg,rgba(39,41,50,0)40%,rgba(39,41,50,.1)100%);
+-webkit-mask-image:linear-gradient(180deg,rgba(39,41,50,100)40%,rgba(39,41,50,0)100%);}
+
+.list-item{
+background-color:[BACKGROUND #COLOR]!important;}
+
+.list-item-content__description p{
+color:var(--lightest-color);
+line-height:1.5!important;}
+
+.list-item-content__text-wrapper{
+position:absolute;
+bottom:10%;
+max-width:100%;
+min-width:75%;}}
